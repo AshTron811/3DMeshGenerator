@@ -9,6 +9,7 @@ import cv2
 import os
 import numpy as np
 import open3d as o3d
+
 # Capture from Webcam
 cap=cv2.VideoCapture(0)
 cap.set(3, 1280)
