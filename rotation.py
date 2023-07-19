@@ -33,6 +33,7 @@ def rotate(s, theta=0, axis='x'):
         print("Error! Invalid axis rotation")
     return r
 
+
 BATCH_SIZE = 25
 
 # Replace this with where you saved your .npy files in the last section
@@ -59,8 +60,7 @@ point_cloud = torch.from_numpy(point_cloud.astype(np.float32))
 point_cloud2 = torch.from_numpy(point_cloud2.astype(np.float32))
 
 if point_cloud.shape != point_cloud2.shape:
-    print("Tensor conversion was not succesful")
-
+    print("Tensor conversion was not successful")
 point_cloud_collections.append(point_cloud)
 point_cloud_collections.append(point_cloud2)
 

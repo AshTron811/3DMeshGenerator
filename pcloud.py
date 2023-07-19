@@ -3,7 +3,13 @@ import point_cloud_utils as pcu
 import pyvista as pv
 
 v, f, n = pcu.load_mesh_vfn('mesh.obj')
-pc = pcu.sample_mesh_lloyd(v, f, 1000)
+'''
+a = len(n)
+b = len(n[0])
+n_points = a + b
+print(n_points)
+'''
+pc = pcu.sample_mesh_lloyd(v, f, 2048)
 output_file = 'pcloud' + '.npy'
 np.save(output_file, pc)
 
